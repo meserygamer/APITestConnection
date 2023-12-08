@@ -14,8 +14,7 @@ data class News(
     var image : String? = null
 )
 
-interface ApiInterface
-{
+interface ApiInterface {
 
     @GET("api/News")
     public fun GetAllNews() : Call<MutableList<News>>

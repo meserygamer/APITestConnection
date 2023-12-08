@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.example.apitest.MainActivity">
 
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/MainPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="#D9D9D9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:siShape="@drawable/activity_change_profile_custom_shape" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/MainRecycleView"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/MainPhoto"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
